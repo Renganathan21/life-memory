@@ -1,0 +1,27 @@
+{
+  "name": "life-memory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Life Memory — Everything you don't want to forget",
+  "workspaces": [
+    "shared",
+    "backend",
+    "mobile"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:mobile": "npm run dev --workspace=mobile",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "keywords": [
+    "life-memory",
+    "expo",
+    "fastify",
+    "react-native",
+    "reminders"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
